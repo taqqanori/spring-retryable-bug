@@ -1,4 +1,4 @@
-# Spring @Retryable demo
+# Spring @Retryable strange behavior demo
 
 Demonstrates strange behavior when using `@Retryable`, `@Async`, and `@Value` together in Spring Boot framework.
 
