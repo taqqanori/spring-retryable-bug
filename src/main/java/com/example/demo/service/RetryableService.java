@@ -2,7 +2,6 @@ package com.example.demo.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.retry.annotation.Retryable;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,11 +12,6 @@ public class RetryableService {
 
 	@Retryable
 	public void retryable() {
-		// just declared, never called
-	}
-
-	@Async
-	public void async() {
 		// just declared, never called
 	}
 

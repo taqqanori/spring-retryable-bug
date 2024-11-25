@@ -25,10 +25,10 @@ public class DemoApplicationController {
 	public ResponseEntity<String> handle(String body, HttpMethod method, HttpServletRequest request,
 			HttpServletResponse response) {
 
-		nonRetryableService.nonFinal();
-		nonRetryableService._final();
-		retryableService.nonFinal();
 		retryableService._final();
+		retryableService.nonFinal();
+		nonRetryableService._final();
+		nonRetryableService.nonFinal();
 
 		return ResponseEntity.ok("ok: see the log!");
 	}
